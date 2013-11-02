@@ -67,7 +67,7 @@ function initialize() {
   });
 
   // Read the data from example.xml
-  downloadUrl("bookmarks.xml", function(doc) {
+  downloadUrl("http://santex.github.io/mapworld/bookmarks.xml", function(doc) {
     var xmlDoc = xmlParse(doc);
     var markers = xmlDoc.documentElement.getElementsByTagName("marker");
     for (var i = 0; i < markers.length; i++) {
